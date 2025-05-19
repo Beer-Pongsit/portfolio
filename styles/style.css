@@ -14,13 +14,6 @@ section{
     padding-top: 5rem;
 }
 
-img {
-    border: 2px solid rgba(208, 255, 252, 0.2);
-    border-radius: 20px;
-    margin: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 hr {
     color: #857652;
 }
@@ -39,6 +32,15 @@ hr {
 
 .header h6 {
     color: #4d7272;
+}
+
+.profile-img {
+    border: 2px solid rgba(133, 118, 82, 0.5);
+    border-radius: 20px;
+    margin: 20px 0;
+    padding: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .section-header {
@@ -98,4 +100,43 @@ hr {
     background: rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.go-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(133, 118, 82, 0.6);
+    color: #bbb;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.skill-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    height: 120px;
+    margin: 10px;
+}
+
+.skill-icon img {
+    width: 100px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.cert-panel {
+    min-width: 320px;
+}
+
+.img-modal {
+    max-height: 90vh;
 }

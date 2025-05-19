@@ -15,6 +15,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/font-prompt.css">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js"></script>
 </head>
 
 <body>
@@ -52,7 +53,8 @@
                 <div class="container text-center">
                     <div class="row">
                         <div class="col align-item-left" style="min-width: 320px;">
-                            <img src="assets/profile.jpg" class="img-fluid" width="320">
+                            <img src="assets/profile.jpg" class="img-fluid profile-img" width="320"
+                                onclick="showImage('assets/profile.jpg')" />
                         </div>
                         <div class="col align-self-center">
                             <h2 class="section-header text-center">About Me</h2>
@@ -100,10 +102,12 @@
                             <div class="col align-item-left" style="min-width: 320px;">
                                 <div class="row">
                                     <div class="col">
-                                        <img src="assets/education.jpg" class="img-fluid" width="240">
+                                        <img src="assets/education.jpg" class="img-fluid profile-img" width="240"
+                                            onclick="showImage('assets/education.jpg')" />
                                     </div>
                                     <div class="col">
-                                        <img src="assets/education-2.jpg" class="img-fluid" width="240">
+                                        <img src="assets/education-2.jpg" class="img-fluid profile-img" width="240"
+                                            onclick="showImage('assets/education-2.jpg')" />
                                     </div>
                                 </div>
 
@@ -190,7 +194,7 @@
                             <br />
                             <p class="section-info text-start">&diamond;&emsp;Managed and improved integrated
                                 systems for teaching and learning support,
-                                such as Zoom booking, exam manager,
+                                such as Zoom Management, Exam Manager, Canvas Instructor,
                                 and related tools.</p>
                             <p class="section-info text-start">&diamond;&emsp;Developed systems for integration with
                                 other departments within the university.</p>
@@ -208,40 +212,68 @@
                             <h5 class="section-info section-green text-center">PROGRAMMING</h5>
                             <br />
                             <div class="row">
-                                <div class="col">
-                                    <p class="section-info text-start">&diamond;&emsp;.NET Framework</p>
-                                    <p class="section-info text-start">&diamond;&emsp;Node.js</p>
-                                    <p class="section-info text-start">&diamond;&emsp;Vue.js</p>
+                                <div class="col skill-icon">
+                                    <img src="assets/dotnet.png" title=".NET Framework" class="img-fluid" />
                                 </div>
-                                <div class="col">
-                                    <p class="section-info text-start">&diamond;&emsp;Go (Golang)</p>
-                                    <p class="section-info text-start">&diamond;&emsp;Python</p>
-                                    <p class="section-info text-start">&diamond;&emsp;Flutter</p>
+                                <div class="col skill-icon">
+                                    <img src="assets/nodejs.png" title="Node.js" class="img-fluid" />
+                                </div>
+                                <div class="col skill-icon">
+                                    <img src="assets/go.png" title="Go (Golang)" class="img-fluid" />
+                                </div>
+                                <div class="col skill-icon">
+                                    <img src="assets/vuejs.png" title="Vue.js" class="img-fluid" />
+                                </div>
+                                <div class="col skill-icon">
+                                    <img src="assets/flutter.png" title="Flutter" class="img-fluid" />
+                                </div>
+                                <div class="col skill-icon">
+                                    <img src="assets/python.png" title="Python" class="img-fluid" />
                                 </div>
                             </div>
                         </div>
                         <div class="col div-box">
                             <h5 class="section-info section-green text-center">DATABASE MANAGEMENT</h5>
                             <br />
-                            <p class="section-info text-start">&diamond;&emsp;SQL Server</p>
-                            <p class="section-info text-start">&diamond;&emsp;MySQL</p>
-                            <p class="section-info text-start">&diamond;&emsp;PostgreSQL</p>
-                            <p class="section-info text-start">&diamond;&emsp;Oracle</p>
+                            <div class="row">
+                                <div class="col skill-icon">
+                                    <img src="assets/sqlserver.png" title="SQL Server" class="img-fluid" />
+                                </div>
+                                <div class="col skill-icon">
+                                    <img src="assets/mysql.png" title="MySQL" class="img-fluid" />
+                                </div>
+                                <div class="col skill-icon">
+                                    <img src="assets/postgresql.png" title="PostgreSQL" class="img-fluid" />
+                                </div>
+                                <div class="col skill-icon">
+                                    <img src="assets/oracle.png" title="Oracle Database" class="img-fluid" />
+                                </div>
+                                <div class="col skill-icon">
+                                    <img src="assets/mongodb.png" title="Mongo DB" class="img-fluid bg-light">
+                                </div>
+                            </div>
                         </div>
                         <div class="col div-box">
                             <h5 class="section-info section-green text-center">OTHERS</h5>
                             <br />
                             <div class="row">
-                                <div class="col">
-                                    <p class="section-info text-start">&diamond;&emsp;Github</p>
-                                    <p class="section-info text-start">&diamond;&emsp;Gitlab</p>
-                                    <p class="section-info text-start">&diamond;&emsp;Docker</p>
-
+                                <div class="col skill-icon">
+                                    <img src="assets/github.png" title="Github" class="img-fluid" />
                                 </div>
-                                <div class="col">
-                                    <p class="section-info text-start">&diamond;&emsp;Microsoft Azure</p>
-                                    <p class="section-info text-start">&diamond;&emsp;Power BI</p>
-                                    <p class="section-info text-start">&diamond;&emsp;Figma</p>
+                                <div class="col skill-icon">
+                                    <img src="assets/gitlab.png" title="Gitlab" class="img-fluid" />
+                                </div>
+                                <div class="col skill-icon">
+                                    <img src="assets/docker.png" title="Docker" class="img-fluid" />
+                                </div>
+                                <div class="col skill-icon">
+                                    <img src="assets/azure.png" title="Microsoft Azure" class="img-fluid" />
+                                </div>
+                                <div class="col skill-icon">
+                                    <img src="assets/powerbi.png" title="Power BI" class="img-fluid" />
+                                </div>
+                                <div class="col skill-icon">
+                                    <img src="assets/figma.png" title="Figma" class="img-fluid" />
                                 </div>
                             </div>
                         </div>
@@ -252,85 +284,96 @@
                 <div class="container text-center">
                     <h2 class="section-header">Certificates</h2>
                     <hr />
-                    <div class="row div-box">
-                        <div class="col">
-                            <img src="assets/cert-1.png" class="img-fluid" width="360">
+                    <div class="row">
+                        <div class="col row div-box">
+                            <div class="col">
+                                <img src="assets/cert-1.png" class="img-fluid profile-img" width="360"
+                                    onclick="showImage('assets/cert-1.png')" />
+                            </div>
+                            <div class="col align-self-center">
+                                <h5 class="section-green text-start">ASP.NET Core MVC Workshop</h5>
+                                <p class="text-secondary text-start">2019 | Mycos Technologies Co., Ltd.</p>
+                            </div>
                         </div>
-                        <div class="col align-self-center">
-                            <h5 class="section-green text-start">ASP.NET Core MVC Workshop</h5>
-                            <p class="text-secondary text-start">2019 | Mycos Technologies Co., Ltd.</p>
+                        <div class="col row div-box">
+                            <div class="col">
+                                <img src="assets/cert-2.png" class="img-fluid profile-img" width="360"
+                                    onclick="showImage('assets/cert-2.png')" />
+                            </div>
+                            <div class="col align-self-center">
+                                <h5 class="section-green text-start">Fundamentals of Computer Networking</h5>
+                                <p class="text-secondary text-start">2019 | Thai MOOC</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row div-box">
-                        <div class="col align-self-center">
-                            <h5 class="section-green text-end">Fundamentals of Computer Networking</h5>
-                            <p class="text-secondary text-end">2019 | Thai MOOC</p>
+                        <div class="col row div-box">
+                            <div class="col">
+                                <img src="assets/cert-3.png" class="img-fluid profile-img" width="360"
+                                    onclick="showImage('assets/cert-3.png')" />
+                            </div>
+                            <div class="col align-self-center">
+                                <h5 class="section-green text-start">Fundamentals of Cyber Security</h5>
+                                <p class="text-secondary text-start">2022 | NCSA</p>
+                            </div>
                         </div>
-                        <div class="col">
-                            <img src="assets/cert-2.png" class="img-fluid" width="360">
+                        <div class="col row div-box">
+                            <div class="col">
+                                <img src="assets/cert-4.png" class="img-fluid profile-img" width="360"
+                                    onclick="showImage('assets/cert-4.png')" />
+                            </div>
+                            <div class="col align-self-center">
+                                <h5 class="section-green text-start">EC-Council Certified Security Specialist</h5>
+                                <p class="text-secondary text-start">2022 | EC-Council</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row div-box">
-                        <div class="col">
-                            <img src="assets/cert-3.png" class="img-fluid" width="360">
+                        <div class="col row div-box">
+                            <div class="col">
+                                <img src="assets/cert-5.png" class="img-fluid profile-img" width="360"
+                                    onclick="showImage('assets/cert-5.png')" />
+                            </div>
+                            <div class="col align-self-center">
+                                <h5 class="section-green text-start">Complete UX/UI Design</h5>
+                                <p class="text-secondary text-start">2023 | BornToDev Academy</p>
+                            </div>
                         </div>
-                        <div class="col align-self-center">
-                            <h5 class="section-green text-start">Fundamentals of Cyber Security</h5>
-                            <p class="text-secondary text-start">2022 | NCSA</p>
+                        <div class="col row div-box">
+                            <div class="col">
+                                <img src="assets/cert-6.png" class="img-fluid profile-img" width="360"
+                                    onclick="showImage('assets/cert-6.png')" />
+                            </div>
+                            <div class="col align-self-center">
+                                <h5 class="section-green text-start">Power BI Destop for Business Analytics</h5>
+                                <p class="text-secondary text-start">2024 | 9Expert</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row div-box">
-                        <div class="col align-self-center">
-                            <h5 class="section-green text-end">EC-Council Certified Security Specialist</h5>
-                            <p class="text-secondary text-end">2022 | EC-Council</p>
+                        <div class="col row div-box">
+                            <div class="col">
+                                <img src="assets/cert-7.png" class="img-fluid profile-img" width="360"
+                                    onclick="showImage('assets/cert-7.png')" />
+                            </div>
+                            <div class="col align-self-center">
+                                <h5 class="section-green text-start">Data Structure & Algorithm X</h5>
+                                <p class="text-secondary text-start">2024 | BornToDev Academy</p>
+                            </div>
                         </div>
-                        <div class="col">
-                            <img src="assets/cert-4.png" class="img-fluid" width="360">
+                        <div class="col row div-box">
+                            <div class="col">
+                                <img src="assets/cert-8.png" class="img-fluid profile-img" width="360"
+                                    onclick="showImage('assets/cert-8.png')" />
+                            </div>
+                            <div class="col align-self-center">
+                                <h5 class="section-green text-start">Go - The Complete Guide</h5>
+                                <p class="text-secondary text-start">2024 | Udemy</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row div-box">
-                        <div class="col">
-                            <img src="assets/cert-5.png" class="img-fluid" width="360">
-                        </div>
-                        <div class="col align-self-center">
-                            <h5 class="section-green text-start">Complete UX/UI Design</h5>
-                            <p class="text-secondary text-start">2023 | BornToDev Academy</p>
-                        </div>
-                    </div>
-                    <div class="row div-box">
-                        <div class="col align-self-center">
-                            <h5 class="section-green text-end">Power BI Destop for Business Analytics</h5>
-                            <p class="text-secondary text-end">2024 | 9Expert</p>
-                        </div>
-                        <div class="col">
-                            <img src="assets/cert-6.png" class="img-fluid" width="360">
-                        </div>
-                    </div>
-                    <div class="row div-box">
-                        <div class="col">
-                            <img src="assets/cert-7.png" class="img-fluid" width="360">
-                        </div>
-                        <div class="col align-self-center">
-                            <h5 class="section-green text-start">Data Structure & Algorithm X</h5>
-                            <p class="text-secondary text-start">2024 | BornToDev Academy</p>
-                        </div>
-                    </div>
-                    <div class="row div-box">
-                        <div class="col align-self-center">
-                            <h5 class="section-green text-end">Go - The Complete Guide</h5>
-                            <p class="text-secondary text-end">2024 | Udemy</p>
-                        </div>
-                        <div class="col">
-                            <img src="assets/cert-8.png" class="img-fluid" width="360">
-                        </div>
-                    </div>
-                    <div class="row div-box">
-                        <div class="col">
-                            <img src="assets/cert-9.png" class="img-fluid" width="360">
-                        </div>
-                        <div class="col align-self-center">
-                            <h5 class="section-green text-start">Working with Microservices in Go</h5>
-                            <p class="text-secondary text-start">2025 | Udemy</p>
+                        <div class="col row div-box">
+                            <div class="col">
+                                <img src="assets/cert-9.png" class="img-fluid profile-img" width="360"
+                                    onclick="showImage('assets/cert-9.png')" />
+                            </div>
+                            <div class="col align-self-center">
+                                <h5 class="section-green text-start">Working with Microservices in Go</h5>
+                                <p class="text-secondary text-start">2025 | Udemy</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -354,5 +397,18 @@
         <footer class="text-center">
             <p>&copy; 2025 Pongsit's Portfolio. All rights reserved.</p>
         </footer>
+        <button id="goTop" class="go-top-btn text-bold" onclick="scrollToTop()">&Uparrow;</button>
+        <!-- Modal -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <img id="modalImage" src="" alt="Image" class="img-fluid img-modal" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
 
 </html>
